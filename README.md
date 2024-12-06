@@ -1,6 +1,6 @@
 This is the server side implementation of the SPECTRE for ITSC 6166/8166 Computer Communivation and Networks. 
 
-The server side would be a workstation it will be used for deploy the trained model. The code is tested in the `ROS2 foxy` envrionment.
+The server side would be a workstation it will be used for deploy the trained model. The code is tested in the `ROS2 foxy` envrionment. Please make sure you have `ROS2 foxy` installed.
 
 ## Configuration
 Similar to the original project, you need to install all the required libaries/packages. The suggested way is to using a conda virtual environment. You can follow the steps to make the service runing:
@@ -17,8 +17,36 @@ Similar to the original project, you need to install all the required libaries/p
 
 `git clone https://github.com/YanzeZhang97/SPECTRE_server_ws.git`
 
-
+`pip install -r requirement.txt`
 
 **step 3** Install additional requirements
 
-`pip install -r requirement.txt`
+`conda install pytorch3d -c pytorch3d`
+
+`cd python_service/python_service/external/face_alignment`
+
+`pip install -e .`
+
+`cd ../face_alignment`
+
+`git lfs pull`
+
+`pip install -e .`
+
+**step 4** Download the pretrained model
+
+`cd ../../../../`
+
+`bash quick_install.sh`
+
+## Running the code
+
+`colcon build`
+
+`source install/setup.bash`
+
+`ros2 run python_service pythonservice`
+
+To see the outputs, please run
+
+`ros2 run rqt_image_view rqt_image_view`
