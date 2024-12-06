@@ -13,11 +13,9 @@ Similar to the original project, you need to install all the required libaries/p
 
 **step 2** Make a workspace, clone the code and install the requirements
 
-`mkdir -p ros2_ws`
-
-`cd ros2_ws`
-
 `git clone https://github.com/YanzeZhang97/SPECTRE_server_ws.git`
+
+`cd SPECTRE_server_ws`
 
 `pip install -r requirement.txt`
 
