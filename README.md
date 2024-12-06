@@ -1,4 +1,4 @@
-This is the server side implementation of the SPECTRE for ITSC 6166/8166 Computer Communivation and Networks. 
+**This is the server side implementation of the SPECTRE for ITSC 6166/8166 Computer Communivation and Networks.**
 
 The server side would be a workstation it will be used for deploy the trained model. The code is tested in the `ROS2 foxy` envrionment. Please make sure you have `ROS2 foxy` installed.
 
