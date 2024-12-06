@@ -1,5 +1,7 @@
 **This is the server side implementation of the SPECTRE for ITSC 6166/8166 Computer Communivation and Networks.**
 
+**This is another implementation for the [original project](https://github.com/ibrahim-anas/SPECTRE-ROS2). In this implementation, you are able to run a service in the [workstation side](https://github.com/YanzeZhang97/SPECTRE_server_ws) and run a image collection in the [robot/client side](https://github.com/YanzeZhang97/SPECTRE_client_ws).**
+
 The server side would be a workstation it will be used for deploy the trained model. The code is tested in the `ROS2 foxy` envrionment. Please make sure you have `ROS2 foxy` installed.
 
 ## Configuration
